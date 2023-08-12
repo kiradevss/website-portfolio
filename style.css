@@ -9,20 +9,29 @@
     line-height: 80px;
     padding: 0 5px;
     height: 80px;
+    cursor: pointer;
     
 }
 .header{
-    position: sticky;
+    position: fixed;
     top: 0;
-}
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    display: flex;
+    z-index: 2;
+
+ }
 .navbar{
-    background: #2c1f23;
     padding: 0;
     height: 85px; 
     width: 100%;
     display: flex;
     justify-content: space-between;
-    z-index: 2;
+    right: 0;
+  
 }
 .navlinks{
    float: right;
@@ -52,8 +61,9 @@
 }
     
 .detel{
-    margin-left: 4%;
-    margin-top: 8%;
+    margin-left: 10%;
+    margin-top: 13%;
+   
 }
 
 .detel h1{
@@ -81,9 +91,8 @@ span{
     color: #e9bbba;
     line-height: 45px;
     font-size: 50px;
-    margin-top: 7%;
-    margin-left: 50px;
-    margin-right: 70%;
+    margin-left: 10%;
+    margin-top: 5%;
     font-weight: bold;
 }
 
@@ -93,18 +102,26 @@ span{
     background: #7a5c58;
     display: inline-block;
     width: 100%;
+    border-radius: 0%;
+    outline: 0.25rem solid #e9bbba
+
+    
+    
 }
 .mycontact{
     margin-top: 70px;
     margin-left: 9%;
 }
 .image{
+    display: flex;
     width: 45%;
-    height: 70%;
+    height: 55%;
     position: absolute;
     bottom: 0%;
     right: 100px;
     top: 30%;
+    
+
 }
 .image.shape{
     height: 100%;
@@ -134,7 +151,7 @@ span{
     position: absolute;
     bottom: 10%;
     left: 8%;
-    top: 80%;
+    top: 73%;
     width: 170px;
     display: flex;
     justify-content: space-evenly;
@@ -181,6 +198,7 @@ span{
     width: 100%;
     border-radius: 0%;
     outline: 0.25rem solid #e9bbba
+    
 }
 .row{
     display: flex ;
@@ -189,25 +207,44 @@ span{
 }
 .about-col-1{
     flex-basis: 35%;
+    margin-top: 5%;
 }
 .about-col-1 img{
     width: 100%;
 }
 .about-col-2{
     flex-basis: 60%;
+    margin-top: 5%;
+
 }
 .sub-tilte{
+    margin-bottom: 3%;
     font-size: 60px;
     font-weight: 600;
 }
+.about-col-2 h2 {
+    text-transform: uppercase;
+    color: #7a5c58;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.second {
+    color: #b4798a;
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
 .tab-titles{
-    display:flex;
+    display: flex;
+    position: relative;
     margin: 20px 0 40px
 }
 .tab-links{
+    color: #7a5c58;
     margin-right: 50px ;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: bold;
     cursor: pointer;
     position: relative;
 }
@@ -216,7 +253,7 @@ span{
     content: '';
     width: 0;
     height: 3px;
-    background: #7a5c58;
+    background: #b4798a;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -229,10 +266,11 @@ span{
     list-style: none;
     margin: 10px 0;
     color:#7a5c58
+    
 }
 .tab-contents ul li span{
     color: #b4798e;
-    font-size: 20px;
+    font-size: 25px;
 }
 .tab-contents{
     display: none;
@@ -241,33 +279,56 @@ span{
 .tab-contents.active-tab{
     display: block;
 }
+
+
 #section3{
     padding: 80px 0;
     color:#b4798a;
-    height: 1000px;
+    height: 700px;
     background: #242323;
     width: 100%;
     border-radius: 0%;
     outline: 0.25rem solid #e9bbba
 }
-.pproject1{
-     width: 30%;
-     float: left;
-     margin-left: 20%;
+.project img {
+    margin-top: 10%;
+    height: auto;
+    width: 550px;
 }
-.pproject2.sub-tilte1{
-    width: 70%;
-    float: right;
-    margin-right: 90px;
+.project-text{
+    width: 550px;
 }
-.pproject2{
-    font-size: 20px;
+.text {
+    border: 2px solid #b4798a;
+    box-shadow: 30px 20px 20px 20px #614646;
+}
 
+.project{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.pproject2 p{
-    margin-top: 10px;
-    font-size: 20px;
+.project-text h2 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.project-text h5 {
+    color: #e9bbba;
+    letter-spacing: 2px;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.project-text p {
     color: #7a5c58;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 45px;
 }
 
 /* ---------footer------ */
